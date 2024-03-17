@@ -1,0 +1,54 @@
+.calendar {
+    font-family: Arial, sans-serif;
+    max-width: 300px;
+    margin: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.month {
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.weekdays {
+    display: flex;
+    font-weight: bold;
+}
+
+.weekdays div {
+    flex: 1;
+    text-align: center;
+    padding: 5px;
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.row {
+    display: flex;
+}
+
+.day {
+    flex: 1;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Example styling for specific days */
+.day:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+.day.today {
+    background-color: #007bff;
+    color: #fff;
+}
